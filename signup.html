@@ -1,0 +1,202 @@
+<html>
+    <head>
+    <title>EasyPharmcy signup</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css">
+        .na{
+                font-family: Microsoft YaHei Light;
+                color:grey;
+                font-weight: bold;
+        }
+        div#mm{
+            width: 900px;
+            height: 500px;
+            margin-left:300px;
+            background-color: red;
+        }
+        div#show{
+                    
+                    width: 50%;
+                    height: 300px;
+                    transform: perspective(130px) translate(150px,70px);
+                }
+                img.slide{
+                    display: none;
+                }
+                img.slide:nth-child(1)
+                {
+                    display: block;
+                     
+                }
+                a:hover{border-bottom:2px solid skyblue;}
+               
+               
+                #l{
+                    margin-left: 200;
+                    width: 1100px;
+                    height:500px;
+                    border:20px solid grey;
+                    position: relative;
+                    background-color: skyblue;
+                    color: white;
+                }
+                input[type="text"]:enabled
+                {
+                    width: 200px;
+                    height: 30px;
+                }
+                form
+                {
+                    margin-top:50px;
+                    margin-left: 250px;
+                }
+                input[type="text"]:enabled
+                {
+                        width:270px;
+                        height: 50px;
+                        border-radius:20px;
+                        padding: 15px;
+                        outline: none;
+
+                }
+                input[type="password"]:enabled
+                {
+                        width:270px;
+                        height: 50px;
+                        border-radius:20px;
+                        padding: 15px;
+                        outline: none;
+
+                }
+                input[type="email"]:enabled
+                {
+                        width:270px;
+                        height: 50px;
+                        border-radius:20px;
+                        padding: 15px;
+                        outline: none;
+
+                }
+                input[type="submit"]:enabled{width: 570px;height:50px;border-radius: 20px;background-color:orangered;font-family:Microsoft YaHei Light;font-weight: bold;}
+                input[id="txtpin"]:enabled{
+                    width: 570px;
+                }
+                                ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+                }
+
+                li {
+                float: left;
+                }
+
+                li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                }
+
+                li a:hover {
+                background-color: #111;
+                }
+               
+              
+                
+                
+    </style>
+    </head>
+    <body>
+      
+        <div id="logo">
+            <svg width="1200px" height="140px">
+                    
+                    <rect x="10" y="10" width="160px" height="100px" rx="20px" ry="20px" style="fill: orangered;" stroke="black" stroke-width="3px"/>
+                    <text x="95" y="50" font-family="Microsoft YaHei Light" fill="black" stroke="white" font-size="30">EaSy</text>    
+                    <text x="20" y="87" font-family="Microsoft YaHei Light" fill="black" stroke="white" font-size="27">PhArMcY.in</text> 
+                    <rect x="30" y="30" width="60px" height="20px" rx="15" ry="15" style="fill:red;" stroke="black" stroke-width="2"transform="rotate(-35,55,46)" />  
+                    <rect x="45" y="62" width="35px" height="19px" rx="15" ry="14" style="fill:blue;" stroke="black" stroke-width="1.5" transform="rotate(-35,12,86)" />
+                    <text x="540" y="45" font-size="50  " font-family="Segoe Script" font-weight="bold" fill="grey">EasyPharmcy.in</text>      
+                  
+            </svg>
+    </div>
+        
+   
+    <p align="right"><a href="login.html" style="text-decoration:none;" class="na">Login</a>&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;
+    <i class="fa fa-cart-plus">&nbsp;&nbsp;<a href="med10.html" style="text-decoration:none;" class="na"><font face="Microsoft YaHei Light">Cart</a></i>&nbsp;&nbsp;&nbsp;||&nbsp;
+    <a href="help.html" style="text-decoration:none;" class="na">Need Help?</a> &nbsp;&nbsp;||
+    <a href="omd.html#about" style="text-decoration:none;" class="na"> About Us</a>
+    </div>
+    <hr>
+    <h1 align="middle" style="color: grey;" >Sign Up</h1>
+    <div id=l>
+            <form action="login.html" name="valid" onsubmit="return validate()" method="get">
+                    
+                    
+                    <input type="text" value="" id="txtaaname" name="txtname" placeholder="First Name"  pattern="[a-zA-Z ]{3,}"  title="FirstName must contain alphabets" required>
+                   
+                    &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" value="" id="txtmob" name="txtmob" placeholder="Last Name" pattern="[a-zA-Z ]{3,}" title="LastName must contain alphabets" required><br>
+                    <br><br>
+                    <input type="email" value="" id="txtpin" name="txtpin" placeholder="Email" value="@gmail.com" required><br>
+                    <br><br>
+                    <input type="password" value="" id="txtpass1" name="txtadd" placeholder="Password" required>
+                    
+                    &nbsp;&nbsp;&nbsp;&nbsp;<input type="password" value="" id="txtadd1" name="txtland" placeholder="Confirm Password" required><br>
+                    <br><br>
+                    <input type="checkbox" required>I accept the terms and conditions<br><br> 
+                    <input type="submit" value="Sign Up">
+        
+
+            </form>
+            <script type="text/javascript">
+                    function validate()
+                    {
+                        
+                    var pass1=document.valid.txtpass1.value;
+                    var pass2=document.valid.txtcpass1.value;
+                    
+                   
+                        if(pass1.length<6)
+                        {
+                            alert("sorry!,password must be 6 characters");
+                            return false;
+                        }
+                        if(pass1==pass2)
+                        {
+                            return true;
+                        }
+                        else
+                        {
+                            alert("password and confirm password should be same");
+                            return false;
+                        }
+                        var name=document.valid.txtname;
+                        if(name=="")
+                        {
+                            alert("please,enter your name");
+                        }
+                        var a=document.getElementById("txtaaname").value;
+                        var check=/^[a-zA-Z]+$/;
+                        if(a.value.matches(check))
+                        {
+                            alert("sorry");
+                        }
+                      
+                        var da=new date();
+                        document.getElementById("time").innerHTML=da;
+                        
+                    }
+                   
+            </script>
+    </div>
+    <script type="text/javascript">
+        
+    </script>
+    <p id="time"></p>
+    <pre><br><h4 class="ne" style="position:relative;bottom:0px;">©Easypharmcy.in .All rights reserved                                                                                                                                             polices: Privacy policy/ returns and cancilations /terms and conditions /sitemap</font></h4></pre> <br>
+    </body>
+</html>

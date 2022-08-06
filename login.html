@@ -1,0 +1,169 @@
+<html>
+    <head>
+        <title>easypharmcy login</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style type="text/css">
+        form
+        {
+            width:200px;
+            height:300px;
+            padding: 50;
+            padding-right:90;
+            padding-top:30;
+            margin-bottom: 130px;
+            background-color: rgb(80, 170, 206);
+            border-radius:5px;
+            box-shadow:0px 0px 10px black;
+            transform: perspective(130px) translate(1100px,80px);
+            
+        }
+        
+        .font1{
+                font-family:Microsoft YaHei Light;
+                color: white;
+            }   
+        input:enabled{font-family: Microsoft YaHei Light;
+            border-top: none;
+            border-right: none;
+            border-left: none; 
+            border-bottom: 3px solid gray;
+            outline: none; 
+        }
+        input[type="submit"]:enabled
+        {
+            width:230px;
+            border-radius:40px;
+            background-color:orangered;
+            font-weight: bold;
+            
+        }
+        input:enabled
+        {
+            width: 230px;
+            height: 40px;
+            border-radius: 15px;
+            padding: 8px;
+        }
+        span.ll{
+            margin-left: 90px;
+            font-size: 14px;
+            font-family:Microsoft YaHei Light;  
+            
+        }
+        .na{
+            font-family:Microsoft YaHei Light ;
+            color: grey;
+            font-weight: bold;
+        }
+        #logo{
+            width: 1200px;
+            height: 120px;
+   
+            margin-left: 10px;
+
+        }
+        body{
+            background-color: rgba(231, 228, 228,0.9);
+                   }
+                   a:hover{
+            border-bottom:2px solid skyblue;
+        } 
+        #sp{background-color: red;width: 100px;height:100px;margin-top:300px;}   
+        div#show{
+                    
+                    width: 100%;
+                    height: 300px;
+                    margin-top: 150px;
+                    margin-left:200px;
+                }
+                img.slide{
+                    display: none;
+                }
+                img.slide:nth-child(1)
+                {
+                    display: block;
+                     
+                }
+                .animation{
+                    /*-webkit-animation-name:Animate;*/
+                   /* -webkit-animation-duration: 2s;*/
+                    animation-name:animate;
+                    animation-duration:2s ;
+
+                }
+                /*@-webkit-keyframes Animate
+                {
+                    from{opacity: 0.1;}
+                    to{opacity: 1;}
+                }*/
+                @keyframes animate
+                {
+                    from{opacity: 0.1;}
+                    to{opacity: 1;}
+                }
+        </style>
+    </head>
+    <body>
+        <div id="logo">
+                <svg width="1200px" height="140px">
+                        
+                        <rect x="10" y="10" width="160px" height="100px" rx="20px" ry="20px" style="fill: orangered;" stroke="black" stroke-width="3px"/>
+                        <text x="95" y="50" font-family="Microsoft YaHei Light" fill="black" stroke="white" font-size="30">EaSy</text>    
+                        <text x="20" y="87" font-family="Microsoft YaHei Light" fill="black" stroke="white" font-size="27">PhArMcY.in</text> 
+                        <rect x="30" y="30" width="60px" height="20px" rx="15" ry="15" style="fill:red;" stroke="black" transform="rotate(-35,55,46)" />  
+                        <rect x="45" y="62" width="35px" height="20px" rx="15" ry="10" style="fill:blue;" stroke="black"transform="rotate(-35,11,86)" />
+                        <text x="540" y="45" font-size="50  " font-family="Segoe Script" font-weight="bold" fill="grey">EasyPharmcy.in</text>      
+                      
+                </svg>
+                <div id="show">
+            
+                    <img class="Slide animation" src="img0.jfif" width="35%" height="350px">
+                    <img class="Slide animation" src="img1.jfif" width="35%" height="350px">
+                </div>
+                <script type="text/javascript">
+                        var ss=document.getElementsByClassName("slide");
+                        var p=0;
+                        setInterval(fun,2000);
+                        function fun()
+                        {
+                            for(var i=0;i<ss.length;i++)
+                            {
+                                ss[i].style.display="none";
+                            }
+                            p++;
+                            if(p>ss.length-1)
+                            {
+                                p=0;
+                            }
+                            ss[p].style.display="block";
+                        }
+        
+                </script>
+        </div>
+            <p align="right">
+            <a href="signup.html" style="text-decoration:none;" class="na">Sign&nbsp;up</a>&nbsp;&nbsp;&nbsp;||&nbsp;
+            <i class="fa fa-cart-plus">&nbsp;&nbsp;<a href="med10.html" style="text-decoration:none;" class="na"><font face="Microsoft YaHei Light">Cart</a></i>&nbsp;&nbsp;&nbsp;||&nbsp;
+            <a href="help.html" style="text-decoration:none;" class="na">Need Help?</a> &nbsp;&nbsp;||
+            <a href="omd.html#about" style="text-decoration:none;" class="na"> About Us</a><br>
+        <div><hr>
+           
+        <form name="userLogin" action="ogomd.html" method="get">
+            <h1 class="font1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Login</h1>
+            <span class="font1">Username:</span>
+            <input type="text" value="" name="usrName"  placeholder="USERNAME" autofocus required>
+            <br><br>
+            <span class="font1">Password:</span>
+            <input type="password" value="" name="usePass"  placeholder="PASSWORD" required>
+            <span class="ll"><a href="#" style="text-decoration: none;">forget password?</a></span>
+            <span class="ll">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="signup.html" style="text-decoration: none;">Sign Up?</a></span>
+            <br><br>
+            <input type="submit" value="LOGIN">
+            
+        </div>
+      
+            
+            
+        </form>
+        <pre><h4 class="ne">©Easypharmcy.in .All rights reserved                                                                                                                                             polices: Privacy policy/ returns and cancilations /terms and conditions /sitemap</font></h4></pre> <br>
+    </body>
+</html>
